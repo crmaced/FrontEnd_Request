@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head runat="server">
+    <meta charset="UTF-8"; http-equiv="Content-Type"; content="text/html";>
+    <title>Request - Login</title>
+    <link href="login_main.css" rel="stylesheet" />
+</head>
+
+<body class="card_login">
+    
+    <div class="title">
+        <h1 class="title_form">WELCOME TO</h1>
+        <h1 class="subtitle_form">REQUEST</h1>
+    </div>
+
+    <form class="form_login">
+        <div class="container_inputs">
+            <input type="text" id="TextBox" placeholder="Usuário" MaxLength="20" OnTextChanged="TextBox_Usuario_TextChanged">
+            <input type="password" id="TextBox" placeholder="Senha" AccessKey="*" SkinID="*" TextMode="Password" MaxLength="20" OnTextChanged="TextBox_Senha_TextChanged">
+        </div>
+
+        <div class="container_button">
+            <button id="button" onclick="" href="/index.html">Entrar</button>
+        </div>
+    </form>
+
+    <div class="help">
+        <a id="forgot_password" href="/index.html">Problemas com seu acesso?</a>
+    </div>
+
+    <div class="signup">
+        <p1 id="signup"><b>Para criar sua conta <a id="click_here" href="/index.html">clique aqui</a>.</b></p1>
+    </div>
+</body>
+</html>
