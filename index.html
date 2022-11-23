@@ -21,29 +21,43 @@
 
         <div class="user">
             <p id="user">Crislaine</p>
+            <img id="img_user" src="Images/Profile/user.jpg">
         </div>
     </header>
 
     <div class="sidebar">
-        <img id="icon" src="Images/Sidebar Icons/dashboard.png"><a href="index.html">DASHBOARD</a>
-        <img id="icon" src="Images/Sidebar Icons/clientes.png"><a href="clientes.html">CLIENTES</a>
-        <img id="icon" src="Images/Sidebar Icons/orcamentos.png"><a href="#clients">ORÇAMENTOS</a>
-        <img id="icon" src="Images/Sidebar Icons/projetos.png"><a href="#contact">PROJETOS</a>
+        <a class="active" href="index.html"><img id="icon" src="Images/Sidebar Icons/dashboard.png">DASHBOARD</a>
+        <a href="clientes.html"><img id="icon" src="Images/Sidebar Icons/clientes.png">CLIENTES</a>
+        <a href="#clients"><img id="icon" src="Images/Sidebar Icons/orcamentos.png">ORÇAMENTOS</a>
+        <a href="#contact"><img id="icon" src="Images/Sidebar Icons/projetos.png">PROJETOS</a>
     </div>
 
     <main>
         <h1>DashBoard</h1>
 
         <div class="projects">
-            
             <h2 class="title">Projetos e Demandas</h2>
 
-            <ul>
-                <p class="itens">Atividades não iniciadas</p>
-                <p class="itens">Atividades em andamento</p>
-                <p class="itens">Atividades com aprovação pendente</p>
-                <p class="itens">Atividades atrasadas</p>
-            </ul>
+            <table id="table">
+
+                <tr>
+                    <td id="nitem">2</td>
+                    <td id="itens">Atividades não iniciadas</td>
+                </tr>
+                <tr>
+                    <td id="nitem">5</td>
+                    <td id="itens">Atividades em andamento</td>
+                </tr>
+                <tr>
+                    <td id="nitem">5</td>
+                    <td id="itens">Atividades com aprovação pendente</td>
+                </tr>
+                <tr>
+                    <td id="nitem">0</td>
+                    <td id="itens">Atividades não iniciadas</td>
+                </tr>
+                
+              </table>
 
         </div>
         
@@ -51,65 +65,53 @@
             
             <h2 class="title">Próximos Vencimentos</h2>
 
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
+            <table id="table">
+
+                <tr id="title_pd">
+                    <th>Projeto</th>
+                    <th>Cliente</th>
+                    <th>Descrição</th>
+                    <th>Vencimento</th>
+                </tr>
+
+                <tr>
+                    <td id="itens">0003</td>
+                    <td id="itens">Crislaine Montanha Macedo</td>
+                    <td id="itens">Logo e Cartão de Visita</td>
+                    <td id="itens">10/11/2022</td>
+                </tr>
+
+                <tr>
+                    <td id="itens">0015</td>
+                    <td id="itens">Alex da Silva Barroso</td>
+                    <td id="itens">Capa para Facebook</td>
+                    <td id="itens">15/12/2022</td>
+                </tr>
+               
+            </table>
+
         </div>
 
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
+    </main>
 
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
+    <footer>
+        <div class="creditos">
+            <p1>2022 | REQUEST</p1>
         </div>
 
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
-
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
+        <div class="links">
+            <a href="clientes.html">Carreira</a>
+            <a href="clientes.html">Carreira</a>
+            <a href="clientes.html">Carreira</a>
+            <a href="clientes.html">Carreira</a>
         </div>
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
 
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
-        </div>
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
 
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
-        </div>
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
-
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
-        </div>
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
-
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
-        </div>
-    
-        </main>
+        
 
 
 
+    </footer>
 
-        <footer>
-            <p2>
-            Request | 2022
-        </footer>
-    </form>
-  
-   
 </body>
 </html>
