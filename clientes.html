@@ -3,7 +3,7 @@
 
 <head >
     <meta charset="UTF-8"; http-equiv="Content-Type"; content="text/html";>
-    <title>Request - Dashboard</title>
+    <title>Request - Clientes</title>
     <link href="main.css" rel="stylesheet">
 </head>
 
@@ -33,41 +33,92 @@
     </div>
 
     <main>
-        <h1>Clientes</h1>
-
-        <div class="projects">
-            
-            <h2 class="title">Projetos e Demandas</h2>
-
-            <ul>
-                <p class="itens">Atividades não iniciadas</p>
-                <p class="itens">Atividades em andamento</p>
-                <p class="itens">Atividades com aprovação pendente</p>
-                <p class="itens">Atividades atrasadas</p>
-            </ul>
-
-        </div>
-        
-        <div class="projects">
-            
-            <h2 class="title">Próximos Vencimentos</h2>
-
-            <p class="itens">PROJETO: 0003 | CLIENTE: Crislaine Montanha Macedo | DESCRIÇÃO: Logo e Cartão de Visita | VENCIMENTO: 10/11/2022</p>
-            <p class="itens">PROJETO: 0015 | CLIENTE: Alex da Silva Barroso | DESCRIÇÃO: Capa para Facebook | VENCIMENTO: 10/11/2022</p>
+        <div class="header_pagename">
+            <h1>Clientes</h1>
+            <input type="button" id="button" onclick="location.href='novocliente.html'" value="Novo Cliente">
+            <input type="text" id="pesquisa" onkeyup="functionPesquisa()" placeholder="Buscar cliente" title="Type in a name">
         </div>
 
-            
-        </main>
+        <div class="tabela_clientes">
 
+            <table id="table_clientes">
 
+                <tr id="tabela_titulo">
+                    <th id="tabela_titulo_text">Código</th>
+                    <th>Nome/Razão Social</th>
+                    <th>Telefone</th>
+                    <th>Cidade/UF</th>
+                    <th>Status</th>
+                </tr>
 
+                <tr>
+                    <td id="itens">00001</td>
+                    <td id="itens">Alex Lima Barros</td>
+                    <td id="itens">(48) 4169-9113</td>
+                    <td id="itens">Florianópolis-SC</td>
+                    <td id="itens">Ativo</td>
+                </tr>
 
-        <footer>
-            <p2>
-            Request | 2022
-        </footer>
-    </form>
-  
-   
+                <tr>
+                    <td id="itens">00002</td>
+                    <td id="itens">Luis Martins Souza</td>
+                    <td id="itens">(67) 3319-7822</td>
+                    <td id="itens">Campo Grande-MS</td>
+                    <td id="itens">Inativo</td>
+                </tr>
+
+                <tr>
+                    <td id="itens">00003</td>
+                    <td id="itens">Carla Carvalho Cavalcanti</td>
+                    <td id="itens">(91) 4872-3738</td>
+                    <td id="itens">Belém-PA</td>
+                    <td id="itens">Ativo</td>
+                </tr>
+
+                <tr>
+                    <td id="itens">00004</td>
+                    <td id="itens">Rebeca Alves Ferreira</td>
+                    <td id="itens">(61) 8338-2435</td>
+                    <td id="itens">Paranoá-DF</td>
+                    <td id="itens">Ativo</td>
+                </tr>
+
+                <tr>
+                    <td id="itens">00005</td>
+                    <td id="itens">Ágatha Ribeiro Almeida</td>
+                    <td id="itens">(11) 2648-5826</td>
+                    <td id="itens">São Paulo-SP</td>
+                    <td id="itens">Ativo</td>
+                </tr>
+               
+            </table>
+
+            <script>
+                function functionPesquisa() {
+                  var input, filter, table, tr, td, i, txtValue;
+
+                  input = document.getElementById("pesquisa");
+                  filter = input.value.toUpperCase();
+                  table = document.getElementById("table_clientes");
+                  tr = table.getElementsByTagName("tr");
+                  
+                  for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[1];
+                    if (td) {
+                      txtValue = td.textContent || td.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                      } else {
+                        tr[i].style.display = "none";
+                      }
+                    }       
+                  }
+                }
+                </script>
+
+        </div>
+
+    </main>
+
 </body>
 </html>

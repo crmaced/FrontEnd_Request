@@ -143,7 +143,7 @@ body{
 
 main {
     margin-left:230px;
-    margin-top: 100px;
+    margin-top: 120px;
     height: auto;
 }
 
@@ -151,7 +151,8 @@ h1 {
     font-family: RadioCanada;
     text-transform: uppercase;
     color: #1CAA90;
-    font-size: 36px;
+    font-size: 32px;
+    display: inline-block;
     padding: 10px 0px 10px 0px;
 }
 
@@ -165,25 +166,30 @@ h2 {
     font-family: RadioCanada;
     text-transform: uppercase;
     color: #36264d;
-    font-size: 28px;
+    font-size: 24px;
     padding: 5px 0 5px 10px;
     margin-bottom: 10px;
 }
 
-#table{
+#table, #table_clientes{
     font-family: RadioCanada;
-    width: 100%
+    width: 100%;
+    border-spacing: 0px;
 }
 
 #nitem{
     color: #1CAA90;
-    padding: 0px 8px 8px 10px;
+    padding: 0px 0px 0px 10px;
     font-size:x-large;
 }
 
 #itens{
-    font-size: 16;
+    font-size: 14px;
     padding: 3px 0px 3px 0px;
+}
+
+#table_clientes tr:hover {
+    background-color: #f1f1f1;
 }
 
 #title_pd{
@@ -191,17 +197,51 @@ h2 {
     text-align: left;
 }
 
-
-footer{
-    background-color: #616161;
-    margin-left:180px;
-    height: 100px;
+.header_pagename{
+    height: 60px;
 }
 
-.creditos{
-    font-size: 12px;
-    color: #FFFFFF;
+#button {
+    width: 150px;
+    height: 35px;
     font-family: RadioCanada;
-    padding: 10px 0px 10px 10px;
+    font-size: 13px;
+    margin: 13px 0px 0px 20px;
+    background-color: #BDE6DF;
+    color: #616161;
+    padding: 4px 4px 4px 4px;
+    border-radius: 25px;
+    border: 1px solid #BDE6DF;
+    box-shadow: 0px 0px 4px #1CAA90;
+    outline: none;
+    vertical-align: top
 }
 
+#pesquisa {
+    font-family: RadioCanada;
+    width: 180px;
+    font-size: 14px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin: 10px 0px 10px 500px;
+    border-radius: 25px;
+    vertical-align: top
+  }
+  
+
+.tabela_clientes{
+    background-color: #FFFFFF;
+    margin: 20px 40px 20px 0;
+}
+
+#tabela_titulo{
+    background-color: #D9D9D9;
+    color:#616161;
+    text-align: left;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#tabela_titulo_text{
+    padding-top: 15px;
+}
